@@ -1,6 +1,10 @@
 <div class="container">
   <h1>Dallas Historical Weather</h1>
 
+  <button type="button" (click)="sortByDate()">
+    Sort by Date
+  </button>
+
   @if (isLoading()) {
   <p>Loading weather data...</p>
   }

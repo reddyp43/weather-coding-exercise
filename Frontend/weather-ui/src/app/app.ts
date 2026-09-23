@@ -33,4 +33,10 @@ export class App implements OnInit {
       }
     });
   }
+
+  sortByDate(): void {
+    this.weatherData.set(
+      [...this.weatherData()].sort((a, b) => a.date.localeCompare(b.date))
+    );
+  }
 }
