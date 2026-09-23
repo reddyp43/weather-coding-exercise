@@ -23,38 +23,55 @@ Make sure the following are installed:
 
 ## Running the Application
 
+Run the following commands from the root of the cloned repository.
+
 ### Backend
 
 Navigate to the backend project:
 
+```
 cd Backend/WeatherApi/WeatherApi
-
+```
 
 Run the API:
 
+```
 dotnet run
+```
 
 The API will be available at:
 
+```
 https://localhost:7097/api/weather
+```
+
+Keep the backend running while starting the frontend.
 
 ### Frontend
 
-Open another terminal and navigate to the Angular project:
+Open another terminal from the root of the repository and navigate to the Angular project:
 
+```
 cd Frontend/weather-ui
+```
 
 Install the dependencies:
 
+```
 npm install
+```
 
 Start the Angular application:
 
+```
 npm start
+```
 
 Open the application in the browser:
 
+```
 http://localhost:4200
+```
 
 ## Assumptions
 
