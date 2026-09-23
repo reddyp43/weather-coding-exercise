@@ -16,6 +16,8 @@ builder.Services.AddHttpClient<IOpenMeteoHttpClient, OpenMeteoHttpClient>((servi
         configuration["OpenMeteo:BaseUrl"]!);
 });
 
+builder.Services.AddScoped<IWeatherService, WeatherService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
